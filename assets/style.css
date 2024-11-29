@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
     --gradient-color: linear-gradient(45deg, rgba(247,102,128,1) 0%, rgba(166,50,125,1) 50%, rgba(87,0,123,1) 100%);
+    --white-color: #F6F6F6;
+    --dark-color: #1A1A19;
 }
 *{
     margin: 0;
@@ -9,11 +12,11 @@
 }
 body{
     font-family: "Montserrat", sans-serif;
-    background-color: #F6F6F6;
+    background-color: var(--white-color);
     font-size: 16px;
 }
 header{
-    background-color: #1A1A19;
+    background-color: var(--dark-color);
     padding: 1rem;
     display: flex;
     text-wrap: nowrap;
@@ -36,7 +39,7 @@ ul{
 }
 a{
     text-decoration: none;
-    color: #F6F6F6;
+    color: var(--white-color);
 }
 .login-btn{
     padding: 10px 20px;
@@ -50,19 +53,14 @@ hr{
     box-sizing: border-box;
     width: 100%;
 }/* Container principal */
-/*
-section{
-    width: 100%;
-    height: 100vh; #confirmar essa auteração
-    padding: 2%;
-}
-*/
 .main-container {
   display: flex; 
   align-items: center; /* Alinha os itens verticalmente */
-  justify-content: space-between; /* Cria espaço uniforme entre os itens */
-  gap: 20px; /* Adiciona espaçamento entre as divs */
+  justify-content: space-between;
+  gap: 20px;
   padding: 1%;
+  width: 100%;
+  height: 100vh; /* acho que ficou bom */
 }
 .text-container {
   flex: 1; /* Faz a div de texto ocupar 50% da largura disponível */
@@ -91,32 +89,48 @@ h1{
     justify-content: space-between;
     gap: 2rem;
 }
+.services-section{
+    background-image: url("../image/tech_neon.jpg");
+    background-size: cover;
+}
 .services-section h2{
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
-    background: var(--gradient-color);
-    -webkit-backgound-clip: text;
-    color: transparent;
-    background-clip:text;
+    color: var(--white-color);
 }
-.carousel-item img{
-    width: 3rem;
-    border: solid 1px black;
-    padding: 8px;
-    border-radius: 50px;
+.carousel-item i{
+    margin-bottom: 5%;
+    font-size: 64px;
 }
 .carousel-item{
-    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    border: solid 1px transparent;
+    border-radius: 3rem;
     padding: 4rem;
+    backdrop-filter: blur(30px);;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--white-color);
+}
+.carousel-item:hover{
+    padding: 4.3rem;
+    transition: 0.3s;
+    border: solid 1px var(--white-color); 
+    box-shadow: #D93B65 0px 0px 10px 2px;
+    
+/*da pra adicionar um cursor pointer linkado ao menu de compras ou faço ele direto aqui com os preços*/
 }
 .footer-container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
     padding: 2%;
-    background-color: #1A1A19;
-    color: #F6F6F6;
+    background-color: var(--dark-color);
+    color: var(--white-color);
 }
 .footer-container h3{
     margin-bottom: 24px;
@@ -124,18 +138,30 @@ h1{
     justify-content: center;
     text-align: center;
 }
-.footer-item{
-    padding: 16px;
+.footer-item img{
+    margin-bottom: 1rem;
+}
+.footer-contato{
     text-wrap: nowrap;
 }
 .footer-list{
     flex-direction: column;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+.footer-list li{
+    margin-bottom: 1rem;
+}
+.footer-list li a:hover{
+    color: #D93B65;
 }
 .footer-copyright{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: #D93B65;
-    color: white;
+    background: var(--gradient-color);
+    color: var(--white-color);
+    font-family: "PT Serif", serif;
 }
