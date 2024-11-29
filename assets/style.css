@@ -52,7 +52,7 @@ a{
     border-radius: 32px;
     padding: 10px 25px;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 .login-btn:hover{
     border: solid 2px #D93B65;
@@ -178,3 +178,26 @@ h1{
     color: var(--white-color);
     font-family: "PT Serif", serif;
 }
+.tech-stack-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    width: 100%;
+    height: 100vh;
+}
+.tech-stack-section h2{
+    margin-bottom: 2rem;
+}
+.backend-stack{
+    margin-bottom: 10%;
+}
+#backend{
+    display: none;
+}
+#frontend{
+    display: none;
+}
+
