@@ -52,12 +52,12 @@ a{
     border-radius: 32px;
     padding: 10px 25px;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 .login-btn:hover{
     border: solid 2px #D93B65;
     background-color: #2D2D2D;
-    border-radius: 25px 0 25px 0;
-    transition: 0.3s;
+    border-radius: 25px 0 25px 0; 
     color: var(--white-color);
 }
 hr{
