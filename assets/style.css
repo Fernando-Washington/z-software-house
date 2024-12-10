@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
     --gradient-color: none;
-    --white-color: #818b9a;          /* Um branco puro */
-    --background-color: #000b11;     /* Um cinza claro */
-    --secondary-color: #4c6e9f;      /* Um vermelho coral vibrante */
-    --dark-color: #1e1212;           /* Um cinza escuro neutro */
-    --moon-son-color: #FFB400;       /* Um amarelo dourado */
+    --white-color: #818b9a;         
+    --background-color: #052e43;     
+    --secondary-color: #4c6e9f;      
+    --dark-color: #1e1212;           
+    --moon-son-color: #FFB400;  
+    /* last background 000b11 */     
 }
 .darkmode{
     --gradient-color: none;
@@ -15,7 +16,6 @@
     --background-color: #000000;
     --secondary-color: #bb3f5a;
     --dark-color: #1A1A19;
-    --moon-son-color: yellow;
 }
 *{
     margin: 0;
