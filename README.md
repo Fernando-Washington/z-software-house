@@ -36,7 +36,7 @@ Este projeto tem como objetivo a criação de uma empresa fictícia de desenvolv
 
 🌐 Site da Empresa
 
-Para conhecer mais sobre a Z Software House, acesse o site clicando aqui.
+Para conhecer mais sobre a Z Software House, acesse o site clicando [qui](https://z-software-house-test.vercel.app/).
 
 ---
 
