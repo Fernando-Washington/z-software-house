@@ -1,10 +1,6 @@
----
-
 # 🏢 **Projeto Z Software House**  
 *Trabalho de Engenharia de Requisitos e Modelagem de Sistemas*  
 **Curso:** Análise e Desenvolvimento de Sistemas (1º Semestre)  
-
----
 
 ## 🎯 **Objetivo**
 
