@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --gradient-color: none;
+    --white-color: #818b9a;         
+    --background-color: #052e43;     
+    --secondary-color: #4c6e9f;      
+    --dark-color: #1e1212;           
+    --moon-son-color: #FFB400;  
+    /* last background 000b11 */     
+}
+.darkmode{
+    --gradient-color: none;
+    --white-color: #F6F6F6;
+    --background-color: #000000;
+    --secondary-color: #bb3f5a;
+    --dark-color: #1A1A19;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color);
+    font-size: 1rem;
+}
+header{
+    background-color: var(--background-color);
+    padding: 1rem;
+    display: flex;
+    text-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    margin-left: 2%;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-right: 100%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+}
+.nav-a:hover{
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+nav h3{
+    color: var(--white-color);
+    display: none;
+}
+.login-btn{
+    padding: 10px 20px;
+    border: solid 2px var(--white-color);
+    border-radius: 32px;
+    background-color: transparent;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.login-btn:hover{
+    border-radius: 25px 0 25px 0; 
+    color: var(--white-color);
+}
+hr{
+    border: solid 1px var(--white-color);
+    box-sizing: border-box;
+    width: 100%;
+}
+/* Container principal */
+.main-container {
+  display: flex; 
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: space-between;
+  gap: 20px;
+  padding: 1%;
+  width: 100%;
+  height: 100vh; /* acho que ficou bom */
+  background-color: var(--background-color);
+}
+.text-container {
+  width: 50%; /* Faz a div de texto ocupar 50% da largura disponível */
+  padding: 20px;
+  color: var(--white-color);
+}
+.text-container h1{
+    font-family: "Inter", sans-serif;
+    margin-bottom: 1.5rem;
+}
+.text-container p{
+    margin-bottom: 2.5rem;
+}
+.text-container a{
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+    border: solid 2px var(--white-color);
+    border-radius: 32px;
+    transition: 0.3s;
+    padding: 3% 3%;
+    
+}
+.text-container a:hover{
+    background-color: var(--white-color);
+    color: var(--dark-color);
+}
+.main-img {
+  width: 50%; /* Faz a div da imagem ocupar 50% da largura disponível */
+  text-align: center;
+}
+.main-img img {
+  max-width: 100%; /* Ajusta o tamanho da imagem dentro da div */
+  height: auto; /* Mantém as proporções da imagem */
+}
+h1{
+    font-size: 42px;
+    margin-bottom: 2rem;
+}
+/* Cards */
+.services-section{
+    padding: 2%;
+}
+.services-section{
+    /* background-image: url(../assets/img/background-img.jpg); */
+    background-color: var(--background-color);
+    background-size: cover;
+}
+.services-section h2{
+    display: flex;
+    justify-content: center;
+    margin:2.5% 0 1% 0;
+    color: var(--white-color);
+}
+.carousel-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    height: 75vh;
+}
+.carousel-item i{
+    margin-bottom: 5%;
+    font-size: 64px;
+}
+.carousel-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    border: solid 1px var(--white-color);
+    border-radius: 3rem;
+    padding: 4rem;
+    backdrop-filter: blur(30px);
+    background-color: var(--background-color);/*deixar o fundo mais escuro*/
+    color: var(--white-color);
+}
+.carousel-item:hover{
+    padding: 4.3rem;
+    transition: 0.3s;
+    border: solid 1px var(--white-color); 
+    box-shadow: var(--white-color) 0px 0px 10px 2px;
+/*da pra adicionar um cursor pointer linkado ao menu de compras ou faço ele direto aqui com os preços*/
+}
+.footer-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: var(--background-color);
+    color: var(--white-color);
+}
+.footer-container h3{
+    margin-bottom: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer-item img{
+    margin-bottom: 1rem;
+}
+.footer-contato{
+    text-wrap: nowrap;
+}
+.footer-list{
+    flex-direction: column;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+.footer-list li{
+    margin-bottom: 1rem;
+}
+.footer-list li a:hover{
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+.footer-copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: var(--gradient-color);
+    color: var(--white-color);
+    font-family: "PT Serif", serif;
+}
+.tech-stack-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    background: var(--background-color);
+    color: var(--white-color);
+    width: 100%;
+    height: 100vh;
+}
+.tech-stack-section h2{
+    margin-bottom: 2rem;
+}
+.tech-stack-container{
+    padding: 7%;
+    border-radius: 3rem;   
+    backdrop-filter: blur(12px);
+    background: var(--gradient-color);
+    border: solid 1px var(--white-color);
+}
+.div-stack-h3{
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+}
+.stack-h3{
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.stack-h3:hover{
+    color: var(--secondary-color);
+}
+.backend-stack{
+    margin-bottom: 10%;
+}
+#backend{
+    display: flex;
+}
+#frontend{
+    display: none;
+}
+/* Dark Mode */
+
+.darkmode-icon{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border: solid 1px var(--white-color);
+    border-radius: 50%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 32px 10px 10px;
+    cursor: pointer;    
+}
+
+#moon-icon, #sun-icon{
+    fill: var(--white-color);
+}
+#moon-icon:hover, #sun-icon:hover{
+    fill: var(--moon-son-color);
+}
+
+#moon-icon {
+    display: block;
+}
+
+#sun-icon{
+    display: none;
+}
